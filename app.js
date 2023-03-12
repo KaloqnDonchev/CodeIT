@@ -1,8 +1,7 @@
-require('dotenv').config();
-const config = require('./config.js');
+const { config } = require('./config.js');
 const express = require('express');
 const cors = require('cors');
-const client = require('./dbService.js');
+const { client } = require('./config.js');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 
