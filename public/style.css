@@ -1,0 +1,28 @@
+form { 
+    margin: 0 auto; 
+    width:250px;
+}   
+
+.user-email {
+    display: inline-block;
+    margin-left: 20;
+}
+
+#email-home {
+    display: inline-block;
+}
+
+.username {
+    display: inline-block;
+    margin-left: 20;
+}
+
+
+#username-home {
+    display: inline-block;
+}
+
+.submit-button {
+    margin: 20px;
+    padding: 0 35px;
+}

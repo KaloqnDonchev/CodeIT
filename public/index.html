@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>    
+</head>
+<body>
+    <form method="post" class="form">
+        <div>
+            <label>Email: </label>
+            <input type="text" class="email" value="test@test.com" required>
+        </div><br>
+
+        <div>
+            <label>Username: </label>
+            <input type="text" class="username" value="testName" required>
+        </div><br>
+
+        <div>
+            <label>Real Name: </label>
+            <input type="text" class="real-name" value="John Doe" required>
+        </div><br>
+
+        <div>
+            <label>Password: </label>
+            <input type="password" class="password" value="test123" required>
+        </div><br>
+
+        <div>
+            <label>Birth date: </label>
+            <input type="date" class="birth-date" value="1988-11-11" required>
+        </div><br>
+
+        <div>
+            <label>Country: </label>
+            <select class="countries"></select>
+        </div><br>
+        <input type="checkbox" class="checkbox">
+        <label>I Agree with Terms and Conditions</label>
+        <button type="submit" class="submit-button">Submit</button></br>
+        <a href="./login.html">Click if you already have an account</a>
+    </form>
+
+</body>
+<script src="register.js"></script>
+</html>
