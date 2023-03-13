@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { config } = require('./config.js');
 const express = require('express');
 const cors = require('cors');
@@ -6,7 +7,7 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 
 const app = express();
-const port = config.app.port;
+const port = process.env.PORT || config.app.port;
 
 app.use(express.json());
 app.use(cors());
