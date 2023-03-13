@@ -19,7 +19,8 @@ const client = new Client({
   host: process.env.POSTGRES_HOST || 'dpg-cg7k5t5269v5l62acno0-a.frankfurt-postgres.render.com',
   database: process.env.POSTGRES_DB || 'codeit_render',
   password: process.env.POSTGRES_PASSWORD || 'yl3sNzE5sHyZsyDAjQaQp9bJXfcHEMzG',
-  port: process.env.POSTGRES_PORT || '5432'
+  port: process.env.POSTGRES_PORT || '5432',
+  ssl: true
 });
 
 
