@@ -1,5 +1,4 @@
 require('dotenv').config();
-const { config } = require('./config.js');
 const express = require('express');
 const cors = require('cors');
 const { client } = require('./config.js');
@@ -7,7 +6,7 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use(cors());
@@ -19,7 +18,7 @@ client.connect((err) => {
     if (err) {
         throw err;
     };
-    console.log('Postgres connected');
+    console.log('Postgres DB connected');
 });
 
 function isEmail(email) {
@@ -73,7 +72,6 @@ app.post('/login', async (req, result) => {
         const cryptedPass = queryResult.rows[0].password;
 
         if (await bcrypt.compare(password, cryptedPass)) {
-            console.log(111111);
             result.json(userDetails);
         } else {
             result.json('Incorrect password')
