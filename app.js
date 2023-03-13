@@ -19,7 +19,7 @@ client.connect((err) => {
     if (err) {
         throw err;
     };
-    console.log('MYSQL connected');
+    console.log('Postgres connected');
 });
 
 function isEmail(email) {
