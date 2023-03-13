@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 
 const app = express();
-const port = process.env.PORT || config.app.port;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
